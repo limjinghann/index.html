@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crayon With Drugs 🖍️</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<h1>🖍️ Crayon With Drugs</h1>
+
+<p>
+Yoo, owner here. Welcome to Crayon with Drugs 🖍️—the place where my slaves can chill, submit ideas, vote in polls, and contribute to our ever-growing crayon cult. 👀
+</p>
+
+<h3>🎨 What can you do here?</h3>
+<ul>
+<li>Submit ideas 💡</li>
+<li>Vote in polls 📊</li>
+<li>Join events 🎉</li>
+<li>Earn bragging rights 🏆</li>
+<li>Cause harmless chaos 🖍️</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🚨 Panic Button</h2>
+<button onclick="panic()">DO NOT PRESS</button>
+<p id="panicResult" class="result"></p>
+</div>
+
+<div class="card">
+<h2>🧪 Crayon Research Lab</h2>
+
+<p>Welcome to the Crayon Research Lab.</p>
+<p>We have no idea what we're doing.</p>
+<p>Neither do the crayons.</p>
+
+<button onclick="experiment()">Conduct Experiment</button>
+<p id="experimentResult" class="result"></p>
+</div>
+
+<div class="card">
+<h2>🔮 Crayon Fortune Teller</h2>
+<button onclick="fortune()">Predict My Future</button>
+<p id="fortuneResult" class="result"></p>
+</div>
+
+<div class="card">
+<h2>🎨 Random Crayon Generator</h2>
+<button onclick="crayon()">Give Me A Crayon</button>
+<p id="crayonResult" class="result"></p>
+</div>
+
+<div class="card">
+<h2>🛰️ Satellite HQ</h2>
+
+<p>
+If you're a Satellite, congratulations.
+</p>
+
+<p>
+You are officially a Professional Reactor™.
+</p>
+
+<h3>Duties</h3>
+<ul>
+<li>React.</li>
+<li>React harder.</li>
+<li>React even harder.</li>
+<li>Continue reacting.</li>
+</ul>
+
+<h3>Benefits</h3>
+<ul>
+<li>Absolutely none.</li>
+<li>A cool title.</li>
+<li>Maybe a cookie.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📰 Totally Real News</h2>
+
+<ul>
+<li>🖍️ Local crayon arrested for tax evasion.</li>
+<li>🛰️ Satellite reacts so hard nearby furniture vibrates.</li>
+<li>🧪 Scientists discover 99% of studies are made up on the spot.</li>
+<li>👑 Owner denies allegations of being made of wax.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🖍️ Crayon Confessions</h2>
+
+<p>"I ate a crayon when I was 5."</p>
+<p>"I reacted before reading."</p>
+<p>"I accidentally became a Satellite."</p>
+<p>"The owner scares me."</p>
+</div>
+
+<footer>
+🖍️ Crayon Fact #??? <br>
+This fact has not been approved by scientists, crayons, or anyone really.
+</footer>
+
+</div>
+
+<script>
+
+function panic() {
+    const messages = [
+        "🚨 CONTAINMENT BREACH. THE CRAYONS HAVE ESCAPED.",
+        "🛰️ A Satellite has been spotted in the ventilation system.",
+        "🍪 The crayons stole your cookies.",
+        "⚠️ Nothing happened. That's suspicious.",
+        "🖍️ The owner has been replaced by crayons."
+    ];
+
+    document.getElementById("panicResult").innerHTML =
+        messages[Math.floor(Math.random()*messages.length)];
+}
+
+function experiment() {
+    const results = [
+        "💥 The lab exploded.",
+        "🖍️ New crayon species discovered.",
+        "🛰️ Satellite escaped containment.",
+        "🤨 Results inconclusive.",
+        "✅ Experiment successful."
+    ];
+
+    document.getElementById("experimentResult").innerHTML =
+        results[Math.floor(Math.random()*results.length)];
+}
+
+function fortune() {
+    const fortunes = [
+        "🍀 Great fortune awaits.",
+        "🖍️ A crayon is watching you.",
+        "🌱 Touch grass immediately.",
+        "🍪 Cookies are in your future.",
+        "🛰️ The Satellites approve."
+    ];
+
+    document.getElementById("fortuneResult").innerHTML =
+        fortunes[Math.floor(Math.random()*fortunes.length)];
+}
+
+function crayon() {
+    const crayons = [
+        "🔴 Red Crayon - Angy.",
+        "🔵 Blue Crayon - Sleepy.",
+        "🟢 Green Crayon - Hasn't paid rent.",
+        "🟡 Yellow Crayon - Blindingly cheerful.",
+        "🟣 Purple Crayon - Extremely suspicious."
+    ];
+
+    document.getElementById("crayonResult").innerHTML =
+        crayons[Math.floor(Math.random()*crayons.length)];
+}
+
+</script>
+
+</body>
+</html>
